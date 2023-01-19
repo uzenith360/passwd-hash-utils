@@ -1,3 +1,3 @@
-import JwtUtils from "./passwd-hash";
+import PasswdHashUtils from "./passwd-hash-utils";
 
-export default JwtUtils;
+export default PasswdHashUtils;

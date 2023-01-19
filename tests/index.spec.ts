@@ -1,10 +1,10 @@
 import 'mocha';
 import { assert } from 'chai';
 
-import JwtUtils from '../src/index';
+import passwdHashUtils from '../src/index';
 
-describe('JwtUtils Class', () => {
+describe('Passwd hash Utils Class', () => {
     it('should have a getInstance init method', () => {
-        assert.isFunction(JwtUtils.getInstance);
+        assert.isFunction(passwdHashUtils.getInstance);
     });
 });
