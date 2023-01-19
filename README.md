@@ -1,3 +1,3 @@
-# jwt-utils
+# passwd-hash
 
-A JWT utilities singleton class to provide commonly used server-side encryption methods
+A password hash utilities singleton class to provide commonly used server-side encryption methods
