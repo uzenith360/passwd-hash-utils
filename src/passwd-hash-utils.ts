@@ -1,7 +1,7 @@
 import * as bcrypt from "bcrypt";
 
-export default class JwtUtils {
-    private static _instance: JwtUtils;
+export default class PasswdHashUtils {
+    private static _instance: PasswdHashUtils;
 
     private readonly saltRounds: number;
 
@@ -34,11 +34,11 @@ export default class JwtUtils {
         return bcrypt.compare(password, hash);
     }
 
-    public static getInstance(saltRounds: number): JwtUtils {
-        if (!JwtUtils._instance) {
-            JwtUtils._instance = new JwtUtils(saltRounds);
+    public static getInstance(saltRounds: number): PasswdHashUtils {
+        if (!PasswdHashUtils._instance) {
+            PasswdHashUtils._instance = new PasswdHashUtils(saltRounds);
         }
 
-        return JwtUtils._instance;
+        return PasswdHashUtils._instance;
     }
 }
