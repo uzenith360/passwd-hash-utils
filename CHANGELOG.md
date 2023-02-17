@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/uzenith360/passwd-hash-utils/compare/v1.0.4...v1.0.5) (2023-02-17)
+
+
+### Bug Fixes
+
+* remove bcypt, use inbuild crypto lib instead ([2d525c2](https://github.com/uzenith360/passwd-hash-utils/commit/2d525c28ce9b16798a0a24259eb9abdcabe58368))
+
 ## [1.0.4](https://github.com/uzenith360/passwd-hash-utils/compare/v1.0.3...v1.0.4) (2023-02-14)
 
 
