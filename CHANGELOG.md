@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/uzenith360/passwd-hash-utils/compare/v1.0.6...v1.0.7) (2023-03-04)
+
+
+### Bug Fixes
+
+* revert compare bug ([73e436f](https://github.com/uzenith360/passwd-hash-utils/commit/73e436f06991cc45c4a6060af010446a30c53e43))
+
 ## [1.0.6](https://github.com/uzenith360/passwd-hash-utils/compare/v1.0.5...v1.0.6) (2023-03-04)
 
 
