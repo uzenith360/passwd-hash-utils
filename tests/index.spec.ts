@@ -8,12 +8,12 @@ describe('Passwd hash Utils Class', () => {
         assert.isFunction(PasswdHashUtils.getInstance);
     });
 
-    it('should correctly compare a password and hash', () => {
+    it('should correctly compare a password and hash', async () => {
         const passwordHashUtil: PasswdHashUtils = PasswdHashUtils.getInstance();
         const password: string = '1234567890asdffg';
-        const [hash, salt] = passwordHashUtil.hash(password).split('.')
+        const hash: string = (await passwordHashUtil.hash(password));
 
-        assert.isTrue(passwordHashUtil.compare(password, hash));
-        assert.isFalse(passwordHashUtil.compare('password', hash));
+        assert.isTrue(await passwordHashUtil.compare(password, hash));
+        assert.isFalse(await passwordHashUtil.compare('password', hash));
     });
 });
